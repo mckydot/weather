@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기상청 API 기온 예보 출력</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <center style="margin: 50px;">
+            <h1>
+                기상청 API 기온 예보 출력
+            </h1>
+        </center>
+        <center>
+            <hr style="margin-bottom: 5px;">
+        </center>
+
+        <form action="#">
+            <label for="datepick">날짜 선택</label>
+            <input type="text" id="datepicker">
+            <button>조회</button>
+        </form>
+        <center>
+            <hr style="margin-bottom: 0px; margin-top: 20px;">
+        </center>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>날짜</th>
+                    <th>시간</th>
+                    <th>온도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        죄회 내용이 없습니다.
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td>20230118</td>
+                    <td>0600</td>
+                    <td>25</td>
+                </tr>-->
+
+            </tbody>
+        </table>
+
+        <p class="result">
+            <!--20230731, 0600, 25입니다.-->
+        </p>
+
+        <center>
+            <input type="button" id="button1" onclick="button1_click();" value="제작자 정보">
+        </center>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
